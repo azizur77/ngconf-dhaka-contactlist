@@ -66,7 +66,7 @@
                             </div>
                         </div>
                     </div>
-                    <div ng-repeat="phone in contact.phones" ng-form="phoneForm">
+                    <div ng-repeat="phone in contact.phones" ng-form="phoneForm" class="phone-form-repeat">
                         <div class="row">
                             <div class="col-md-4">
                                 <select class="form-group select"
@@ -133,7 +133,7 @@
             <div class="col-md-12">
                 <div class="well well-white">
                     <center>
-                        <button class="btn btn-lg alizarin" ng-click="clearContact()">Clear</button>
+                        <button class="btn btn-lg pomegranate" ng-click="clearContact()">Clear</button>
                         <button class="btn btn-lg wet-asphalt" 
                                 ng-disabled="contactForm.$invalid" 
                                 ng-click="saveContact()">Save</button>

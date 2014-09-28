@@ -1,5 +1,25 @@
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+/*@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Cabin+Sketch:400,700);
+*/
+@font-face {
+    font-family: "Oswald";
+    src: url('components/fonts/Oswald-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Oswald-Light";
+    src: url('components/fonts/Oswald-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Oswald-Bold";
+    src: url('components/fonts/Oswald-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Cabin Sketch";
+    src: url('components/fonts/CabinSketch-Regular.ttf') format('truetype');
+}
 
 body {
     margin-top: 20px;
@@ -29,12 +49,12 @@ body {
 
 .post-title {
     font-size: 24px;
-    font-weight: 300;
+    font-family: "Oswald-Light";
 }
 
 .post-total {
     font-size: 26px;
-    font-weight: 300;
+    font-family: "Oswald-Light";
 }
 
 textarea {
@@ -91,7 +111,7 @@ hr.style-two {
 }
 
 .turquoise-border {
-    border-left: #1abc9c 3px solid;
+    border-left: #1abc9c 5px solid;
 }
 
 .emerald {
@@ -99,7 +119,7 @@ hr.style-two {
 }
 
 .emerald-border {
-    border-left: #2ecc71 3px solid;
+    border-left: #2ecc71 5px solid;
 }
 
 .amethyst {
@@ -107,15 +127,16 @@ hr.style-two {
 }
 
 .amethyst-border {
-    border-left: #9b59b6 3px solid;
+    border-left: #9b59b6 5px solid;
 }
 
 .pomegranate {
     background: #c0392b;
+    color: white;
 }
 
 .pomegranate-border {
-    border-left: #c0392b 3px solid;
+    border-left: #c0392b 5px solid;
 }
 
 .asbestos {
@@ -123,7 +144,7 @@ hr.style-two {
 }
 
 .asbestos-border {
-    border-left: #7f8c8d 3px solid;
+    border-left: #7f8c8d 5px solid;
 }
 
 .wet-asphalt {
@@ -132,7 +153,7 @@ hr.style-two {
 }
 
 .wet-asphalt-border {
-    border-left: #34495e 3px solid;
+    border-left: #34495e 5px solid;
 }
 
 .sun-flower {
@@ -140,7 +161,7 @@ hr.style-two {
 }
 
 .sun-flower-border {
-    border-left: #f1c40f 3px solid;
+    border-left: #f1c40f 5px solid;
 }
 
 .alizarin {
@@ -149,7 +170,7 @@ hr.style-two {
 }
 
 .alizarin-border {
-    border-left: #e74c3c 3px solid;
+    border-left: #e74c3c 5px solid;
 }
 
 .belize-hole {
@@ -158,7 +179,7 @@ hr.style-two {
 }
 
 .belize-hole-border {
-    border-left: #2980b9 3px solid;
+    border-left: #2980b9 5px solid;
 }
 
 .btn-wide {
@@ -220,3 +241,66 @@ textarea.ng-invalid.ng-dirty {
     margin-bottom: 30px;
 }
 
+.welcome-date {
+    font-family: "Cabin Sketch", cursive;
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.phone-form-repeat.ng-enter,
+.phone-form-repeat.ng-move {
+  -webkit-animation: fadeIn 1s;
+}
+
+.phone-form-repeat.ng-leave {
+  -webkit-animation: fadeOut 0.5s;
+}
+
+
+.contact-form-appear.ng-enter {
+    -webkit-animation: zoomIn 0.4s;
+}
+
+.contact-list-appear.ng-enter {
+    -webkit-animation: zoomIn 0.7s;
+}
+/*
+ * I suck at CSS. Hat-tip to: http://www.webtipblog.com/adding-scroll-top-button-website/
+ */
+.scroll-top-wrapper {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    text-align: center;
+    z-index: 99999999;
+    background-color: #7f8c8d;
+    color: #eeeeee;
+    width: 50px;
+    height: 48px;
+    line-height: 48px;
+    left: 50px;
+    bottom: 50px;
+    padding-top: 2px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.scroll-top-wrapper:hover {
+    background-color: #34495e;
+}
+.scroll-top-wrapper.show {
+    visibility:visible;
+    cursor:pointer;
+    opacity: 1.0;
+}
+.scroll-top-wrapper i.fa {
+    line-height: inherit;
+}
